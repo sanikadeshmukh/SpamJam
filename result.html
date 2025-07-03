@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="text-align: center; font-family: 'Arvo', serif">
+        <h1>SpamJam</h1>
+        <h3>Naive Bayes spam filtering API using Python and scikit-learn</h3>
+      </div>
+    </header>
+    <p style="color: blue; font-size: 20; text-align: center">
+      <b style="font-family: 'Arvo', serif">Classified Result Message</b>
+    </p>
+    <div style="text-align: center; font-family: 'Arvo', serif">
+      {% if prediction == 1%}
+      <h2 style="color: red">Spam</h2>
+      {% elif prediction == 0%}
+      <h2 style="color: green">Jam</h2>
+      {% endif %}
+    </div>
+  </body>
+</html>
